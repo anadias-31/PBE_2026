@@ -16,4 +16,13 @@ function calcularPedido ($nome,$quantidade,$preco,
         "total"=>$total
     ];
 }
+
+function CalculoFrete ($valorTotal){
+    $frete = $valorTotal*(10/100);
+    $totalComFrete= $frete +$valorTotal;
+    return $totalComFrete;
+    
+    
+}
+
 ?>
