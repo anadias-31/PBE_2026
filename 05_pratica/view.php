@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_FTCsO3Rt-7gENdWUG9cWJE7rUSIBvdvGR_Ydyiqnrg&s=10">
 </head>
 
-<body style="background-color:#E9DDCB;">
-    <img src="pet.png" style="image-align:center">
+<body style="background-color:#fff;">
+    <img src="pet.png" style="width:20%; display: flex; margin-left: auto; margin-right: auto">
+
 
     <h1 style= "text-align:center; background-color:#01A6C6; color:#fffff" >Cadastre seu Pet 🐾 </h1>
     
