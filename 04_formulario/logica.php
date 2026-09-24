@@ -1,5 +1,4 @@
 <?php 
-// Recebendo os dados do formulário
 $nome = $_POST['nome']; 
 
 $nome_produto = $_POST['nome_produto']; 
