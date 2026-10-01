@@ -10,7 +10,7 @@
     <img src="pet.png" style="width:20%; display: flex; margin-left: auto; margin-right: auto">
 
 
-    <h1 style= "text-align:center; background-color:#01A6C6; color:#fffff" >Cadastre seu Pet 🐾 </h1>
+    <h1 style= "text-align:center; background-color:#01A6C6; color:#fff" >Cadastre seu Pet 🐾 </h1>
     
     <form action="logica.php" method="post">
         <h2 style="color:#FE7702">Dados do animal</h2>

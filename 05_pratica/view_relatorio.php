@@ -9,7 +9,7 @@
 <body style="background-color:#fff;">
     <img src="pet.png" style="width:20%; display: flex; margin-left: auto; margin-right: auto">
 
-    <h1 style= "text-align:center; background-color:#01A6C6; color:#fffff" >Relatório do seu Pet 🐾 </h1>
+    <h1 style= "text-align:center; background-color:#01A6C6; color:#ffff" >Relatório do seu Pet 🐾 </h1>
 
     <h2 style="color:#FE7723">Olá <?= $nome_dono ?> Seja bem vindo a <b>PetLove</b></h2>
     <p>Nome do Animal:<b> <?= $nome_animal ?></b> </p>
