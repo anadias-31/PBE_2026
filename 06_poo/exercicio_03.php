@@ -1,44 +1,64 @@
 <?php
-class Banco{
+class Aula{
     public $disciplina;
     public $professor;
     public $duracao;
-    public $numero_sala;
+    public $n_sala;
     public $bloco;
 
-    function exibirInformacoes($dados){
-        
+    function exibirInformacoes(){
+        echo "Disciplina:$this->disciplina <br>";
+        echo "Professor:$this->professor <br>";
+        echo "Duração:$this->duracao <br>";
+        echo "Numero da sala:$this->n_sala<br>";
+        echo "Bloco:$this->bloco <br>";
+    }
+
+    function trocarProfessor($professor){
+        $this->professor = $professor;
+        echo "Professor alterado, agora o professor $this->professor ministrará a aula <br>";
+    }
+
+    function alterarLocal($n_sala,$bloco){
+        $this->n_sala =$n_sala;
+        $this->$bloco = $bloco;
+        echo "O local foi alterado par bloco $this->bloco no numero $this->n_sala <br> ";
     }
 
 }
-$conta1=new Banco();
-    $conta1->titular="Ana Lara";
-    $conta1->numero="123";
-    $conta1->saldo=1000;
-    $conta1->tipo="Conta corrente";
+$aula1=new aula();
+    $aula1->disciplina="LM";
+    $aula1->professor="Gabriel";
+    $aula1->duracao="250 mim";
+    $aula1->n_sala="1";
+    $aula1->bloco="2";
 
-echo"Titular: ".$conta1->titular."<br>";
-echo"Numero: ".$conta1->numero."<br>";
-echo"Saldo: ".$conta1->saldo."<br>";
-echo"Tipo: ".$conta1->tipo."<br>";
+echo"Disciplina: ".$aula1->disciplina."<br>";
+echo"Professor: ".$aula1->professor."<br>";
+echo"Duração: ".$aula1->duracao."<br>";
+echo"Numero da sala: ".$aula1->n_sala."<br>";
+echo"Bloco: ".$aula1->bloco."<br>";
 echo"<hr>";
 
-$conta2=new Banco();
-    $conta2->titular="Maria Cecilia";
-    $conta2->numero="124";
-    $conta2->saldo=8000;
-    $conta2->tipo="Conta conjunta";
+$aula2=new aula();
+    $aula2->disciplina="PBE";
+    $aula2->professor="Leonardo";
+    $aula2->duracao="350 mim";
+    $aula2->n_sala="1";
+    $aula2->bloco="2";
 
-echo"Titular: ".$conta2->titular."<br>";
-echo"Numero: ".$conta2->numero."<br>";
-echo"Saldo: ".$conta2->saldo."<br>";
-echo"Tipo: ".$conta2->tipo."<br>";
+echo"Disciplina: ".$aula2->disciplina."<br>";
+echo"Professor: ".$aula2->professor."<br>";
+echo"Duração: ".$aula2->duracao."<br>";
+echo"Numero da sala: ".$aula2->n_sala."<br>";
+echo"Bloco: ".$aula2->bloco."<br>";
 echo"<hr>";
 
-$conta1->depositar(100);
-$conta2->sacar(1000);
+$aula1->trocarProfessor("Luiz");
+$aula1->alterarLocal(5,1);
 echo"<hr>";
-$conta1->consultarSaldo();
-$conta2->consultarSaldo();
+$aula1->exibirInformacoes();
+
+
 
 ?>
