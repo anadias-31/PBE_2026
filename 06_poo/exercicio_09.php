@@ -37,4 +37,7 @@ $produto = new Produto("Teclado Gamer", 250, 10);
 $produto->vender(2); 
 $produto->reajustarPreco(10); 
 $produto->exibirInfo(); 
+
+
+
 ?>
