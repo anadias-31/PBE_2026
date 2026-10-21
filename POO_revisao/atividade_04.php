@@ -4,7 +4,7 @@ class Paciente {
     private $idade;
     private $peso;
     private $altura;
-    private $calculoIMC; // 1. Atributo adicionado para armazenar o IMC
+    private $calculoIMC; 
 
     public function __construct($nome, $idade, $peso, $altura) {
         $this->nome = $nome;
