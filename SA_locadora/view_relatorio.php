@@ -42,6 +42,6 @@
     <p><b>Total</b><?= $subtotal ?></p>
     <p><b>Desconto </b><?= $percentual ?></p>
     <p><b>🎉 Parabéns! Você ganhou <?=$percentual?>% de desconto pela locação longa. </b><p>
-    <h3>Total a pagar: R$<?$total?></h3>
+    <h3>Total a pagar: R$<?$precoFinal?></h3>
 </body>
 </html>

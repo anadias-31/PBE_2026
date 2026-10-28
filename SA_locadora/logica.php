@@ -1,14 +1,14 @@
 
 <?php
 
-$nome = $_POST['nome'] ?? '';
-$email = $_POST['email'] ?? '';
-$data = $_POST['data'] ?? '';
+$nome = $_POST['nome'];
+$email = $_POST['email'] ;
+$data = $_POST['data'] ;
 $dias = (int) ($_POST['dias'] ?? 0);
-$categoria = $_POST['categoria'] ?? '';
-$seguro = $_POST['seguro'] ?? '';
-$gps = $_POST['gps'] ?? '';
-$cadeirinha = $_POST['cadeirinha'] ?? '';
+$categoria = $_POST['categoria'];
+$seguro = $_POST['seguro'];
+$gps = $_POST['gps'] ;
+$cadeirinha = $_POST['cadeirinha'] ;
 
 function calcularSubtotal($diaria, $dias) {
     return $diaria * $dias;
@@ -72,7 +72,6 @@ $desconto = $subtotal * ($percentual / 100);
 
 $precoFinal = $total - $desconto;
 
-// Exibe o relatório
 require_once "view_relatorio.php";
 
 ?>
